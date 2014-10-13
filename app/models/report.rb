@@ -1,4 +1,4 @@
 class Report < ActiveRecord::Base
-  has_attached_file :cover_image, :styles => { :medium => "270x365>", :thumb => "140x184>" }, :default_url => ""
+  has_attached_file :cover_image, :styles => { :thumb => "100x100" }
   validates_attachment_content_type :cover_image, :content_type => /\Aimage\/.*\Z/	
 end

@@ -7,7 +7,7 @@
   <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
   <dd><%= @report.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:cover_image) %>:</strong></dt>
-  <dd><%= image_tag @report.cover_image.url(:medium) %></dd>  
+  <dd><%= image_tag @report.cover_image.url %></dd>  
   <dt><strong><%= model_class.human_attribute_name(:date) %>:</strong></dt>
   <dd><%= @report.date %></dd>
   <dt><strong><%= model_class.human_attribute_name(:link) %>:</strong></dt>
