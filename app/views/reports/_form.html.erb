@@ -23,6 +23,13 @@
     <%= error_span(@report[:title]) %>
   </div>
   <div class="control-group">
+    <%= f.label :cover_image, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.file_field :cover_image, :class => 'form-control' %>
+    </div>
+    <%= error_span(@report[:cover_image]) %>
+  </div>  
+  <div class="control-group">
     <%= f.label :date, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :date, :class => 'form-control' %>
