@@ -51,6 +51,7 @@
             <li><%= link_to "Link1", "/path1"  %></li>
             <li><%= link_to "Link2", "/path2"  %></li>
             <li><%= link_to "Link3", "/path3"  %></li>
+            <li><%= link_to "The Prosumer Blog", "http://www.prosumer-report.com/blog/" %></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <% unless user_signed_in? -%>
@@ -59,9 +60,9 @@
               <li><%= link_to 'Sign Up', new_user_registration_path %></li>
             <% end %>
             <% if user_signed_in? %>
-              <li>Welcome, <%= link_to current_user.email, edit_user_registration_path %></li>
+              <li><%= link_to current_user.email, edit_user_registration_path %></li>
               <li>|</li>
-              <li><%= link_to 'Sign out', destroy_admin_session_path, method: :delete %></li>
+              <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
             <% end %>
           </ul>
         </div>
@@ -88,7 +89,7 @@
       </div><!--/row-->
 
       <footer>
-        <p>&copy; Company 2014</p>
+        <p>&copy; Havas Worldwide 2014</p>
       </footer>
 
     </div> <!-- /container -->

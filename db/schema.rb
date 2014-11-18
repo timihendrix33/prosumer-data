@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141013213631) do
+ActiveRecord::Schema.define(version: 20141118224629) do
 
   create_table "reports", force: true do |t|
     t.string   "title"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20141013213631) do
     t.string   "cover_image_content_type"
     t.integer  "cover_image_file_size"
     t.datetime "cover_image_updated_at"
+    t.string   "description"
   end
 
   create_table "users", force: true do |t|
